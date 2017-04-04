@@ -3,11 +3,13 @@
 var darkBlue = '#3e5d8e';
 var offWhite = '#fcfbf7';
 
+google.charts.load('current', {
+    'packages': ['geochart', 'corechart']
+});
+
 $(document).ready(function() {
     //console.log("ready!");
-    google.charts.load('current', {
-        'packages': ['geochart', 'corechart']
-    });
+
 
     var stateJobCount = [];
     var states = {};
