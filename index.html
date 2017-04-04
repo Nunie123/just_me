@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="google_trends_data.js"></script>
+  <script type="text/javascript" src="internet_users_data.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFgSLgask_WTRtaY-S60TBFGLx8hJMo9k"
+  type="text/javascript"></script>
+  <title>Ed Nunes - Home</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">
+            Ed Nunes
+          </a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <!--<li>
+            <a href="/">Blog</a>
+          </li>
+          <li>
+            <a href="/">Books</a>
+          </li>-->
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="container-fluid">
+    <!--<div class="intro-par">
+      I have a passion for data, so it's fortunate that people pay me to work
+      with data all day long. It's a great time to work in data, as improved
+      data storage capacities and computational power have enabled
+      <a href="https://en.wikipedia.org/wiki/Big_data">Big Data</a> and
+      <a href="https://en.wikipedia.org/wiki/Machine_learning">Machine Learning</a>.
+      According to GlassDoor, two of the top three
+      <a href="https://www.glassdoor.com/List/Best-Jobs-in-America-LST_KQ0,20.htm">Best Jobs in America</a>
+      are Data Scientist and Data Engineer. GlassDoor currently lists
+      <span class="number-of-jobs">250,000</span> data-related jobs in the US,
+      with the hottest job markets in
+      <span class="job-state-one">California</span>,
+      <span class="job-state-two">Texas</span>, and
+      <span class="job-state-three">North Carolina</span>
+    </div>-->
+    <div class="row">
+      <div class="col-md-12 top-title">
+        As we transform data, data is transforming the world.
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5 intro-par-container">
+        <div class="intro-par">
+          <!--The world is more connected.  People's lives, business and personal, inhabit the web.
+          <br />
+          Their work, habits, friends and dreams are all stored as data.
+          <br />
+          That data is value that used to be thrown away.
+          <br />
+          We use
+          <a href="https://en.wikipedia.org/wiki/Data_science">Data Science</a>,
+          <a href="https://en.wikipedia.org/wiki/Machine_learning">Machine Learning</a>,
+          <a href="https://en.wikipedia.org/wiki/Big_data">Big Data</a>,
+          <a href="http://searchdatamanagement.techtarget.com/definition/data-engineer">Data Engineering</a>,
+          <a href="https://en.wikipedia.org/wiki/Business_intelligence">Business Inteligence</a>, and
+          <a href="https://en.wikipedia.org/wiki/Data_analysis">Data Analysis</a> to empower
+          <a href="http://whatis.techtarget.com/definition/data-driven-decision-management-DDDM">Data Driven Decision Making</a>.
+          <br />
+          These are not new ideas, but they are becoming so powerful they are poised to change our lives.-->
+            The amount of data we collect is growing fast.
+          <br />
+          <br />
+          <br />
+            All that data is incredibly valuable, if we can learn to use it.
+
+
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div id="internet-users" style="width: 100%; height: 300px;"></div>
+      </div>
+
+    </div>
+    <div clas="row">
+      <div class="col-md-offset-5 col-md-7 citation">
+        Source: <a href="http://data.worldbank.org/indicator/IT.NET.USER.P2">
+          World Bank
+        </a>
+      </div>
+
+    </div>
+    <div class="row geo-title">
+      Every year more of the world puts their lives online.
+      People from every country are putting their person and professional data on the web.
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div id="internet-countries-2000" style="width: 100%; height: 300px;"></div>
+        <div class="geo-sub-title">
+          Internet users in 2000
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div id="internet-countries-2015" style="width: 100%; height: 300px;"></div>
+        <div class="geo-sub-title">
+          Internet users in 2015
+        </div>
+      </div>
+    </div>
+    <div clas="row">
+      <div class="col-md-12 citation">
+        Source: <a href="http://data.worldbank.org/indicator/IT.NET.USER.P2">
+          World Bank
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div id="jobs-map" style="width: 900px;"></div>
+    </div>
+    <div class="row glassdoor-citation">
+      <a href='https://www.glassdoor.com/index.htm'>powered by <img src='https://www.glassdoor.com/static/img/api/glassdoor_logo_80.png' title='Job Search' /></a>
+    </div>
+    <div class="row">
+      <div class="col-md-5 intro-par">
+        Data is only valuable once it has been transformed into information.
+        <br />
+        <br />
+        <br />
+        As the volume of data increases, so do the challenges of dealing with it.
+      </div>
+      <div class="col-md-7">
+        <div id="data-in-books" style="width: 100%; height: 300px;"></div>
+      </div>
+    </div>
+    <div clas="row citation-row">
+      <div class="col-md-12 citation">
+        Source: <a href="https://books.google.com/ngrams/graph?content=data+analytics&case_insensitive=on&year_start=1988&year_end=2008&corpus=15&smoothing=3&share=&direct_url=t4%3B%2Cdata%20analytics%3B%2Cc0%3B%2Cs0%3B%3Bdata%20analytics%3B%2Cc0%3B%3BData%20Analytics%3B%2Cc0">
+          Google Books Ngram Viewer
+        </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-7">
+        <div id="google-trends" style="width: 100%; height: 300px;"></div>
+      </div>
+      <div class="col-md-5 intro-par">
+        The tools to analyze data are getting better.
+        <br />
+        <br />
+        <br />
+        Data Warehousing and Machine Learning are becoming approachable for modest development shops.
+      </div>
+    </div>
+    <div clas="row">
+      <div class="col-md-7 citation">
+        Source: <a href="https://trends.google.com/trends/explore?date=all&q=data%20analytics">
+          Google Trends
+        </a>
+      </div>
+    </div>
+
+
+
+
+  </main>
+  <footer>
+
+  </footer>
+</body>
